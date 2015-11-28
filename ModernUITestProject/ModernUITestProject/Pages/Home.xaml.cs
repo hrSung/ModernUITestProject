@@ -34,7 +34,6 @@ namespace ModernUITestProject.Pages
             //대화상자(Dialog)를 띄운후 대화상자의 응답이 확인이라면,
             {
                 textBox1.Text = fbd.SelectedPath;
-                //Path 변수에 선택된 폴더의 경로를 집어넣는다.
             }
         }
 
