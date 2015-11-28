@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\WPFProject\ModernUITestProject\ModernUITestProject\obj\Debug\
+D:\Git\ModernUITestProject\ModernUITestProject\ModernUITestProject\obj\Debug\
 ModernUITestProject
 none
 false
 DEBUG;TRACE
-D:\WPFProject\ModernUITestProject\ModernUITestProject\App.xaml
+D:\Git\ModernUITestProject\ModernUITestProject\ModernUITestProject\App.xaml
 5-1202269702
 
 82080410482
-14-1660604453
+141276106822
 MainWindow.xaml;Pages\Settings\About.xaml;Pages\Settings\Appearance.xaml;Pages\Home.xaml;Pages\SettingsPage.xaml;
 
 False
