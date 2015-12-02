@@ -45,6 +45,30 @@ namespace ModernUITestProject.Pages
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 textBox2.Text = ofd.SafeFileName;
+
+                try
+                {
+                    System.IO.StreamReader sr = new System.IO.StreamReader(ofd.OpenFile());
+                    string content = sr.ReadToEnd();
+                    sr.Close();
+
+                    selectTextBeforeValue.Text = content;
+                    content = System.Text.RegularExpressions.Regex.Replace(content, "a", "QQQ");
+
+                    System.IO.StreamWriter writer = new System.IO.StreamWriter(ofd.FileName);
+                    writer.Write(content);
+                    writer.Close();
+
+                    sr = new System.IO.StreamReader(ofd.OpenFile());
+                    content = sr.ReadToEnd();
+                    sr.Close();
+
+                    selectTextAfterValue.Text = content;
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("=-=-=-=Exception : " + ex);
+                }
             }
         }
 
